@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Headlines</title>
+</head>
+<body>
+    <!--Jinja objects use-->
+    
+    <!--Adding looping logic to home.html-->
+    {% for article in articles %}
+        <b><a href="{{article.link}}">{{article.title}}</a></b><br />
+        <i>{{article.published}}</i><br />
+        <p>{{article.summary}}</p>
+        <br />
+    {% endfor %}
+
+
+</body>
+</html>
