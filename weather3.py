@@ -16,12 +16,12 @@ RSS_FEEDS = {'bbc': 'http://feeds.bbci.co.uk/news/rss.xml',
             'iol': 'http://www.iol.co.za/cmlink/1.640'}
 
 DEFAULTS = {'publication': 'bbc', 'city': 'London, UK' , 'currency_from': 'CNY', 'currency_to': 'USD'}
-WEATHER_URL = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid=c78c90c716c38663bfd4971a4906dd66'
+WEATHER_URL = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid=78c90c716c38663bfd4971a4906dd66'
 
 #https://openexchangerates.org/api/latest.json?app_id=YOUR_APP_ID&base=GBP&callback=someCallbackFunction
 
 # 04431e3dbbfe4ef7907cf066d7da28e4
-CURRENT_URL = 'https://openexchangerates.org//api/latest.json?app_id=04431e3dbbfe4ef7907cf066d7da28e4'
+CURRENT_URL = 'https://openexchangerates.org//api/latest.json?app_id=4431e3dbbfe4ef7907cf066d7da28e4'
 
 
 @app.route("/")

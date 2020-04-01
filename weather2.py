@@ -21,7 +21,7 @@ WEATHER_URL = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&
 #https://openexchangerates.org/api/latest.json?app_id=YOUR_APP_ID&base=GBP&callback=someCallbackFunction
 
 # 04431e3dbbfe4ef7907cf066d7da28e4
-CURRENT_URL = 'https://openexchangerates.org//api/latest.json?app_id=04431e3dbbfe4ef7907cf066d7da28e4'
+CURRENT_URL = 'https://openexchangerates.org//api/latest.json?app_id=4431e3dbbfe4ef7907cf066d7da28e4'
 
 
 @app.route("/")
@@ -70,7 +70,7 @@ def get_news(query):
 
 def get_weather(query):
     #api_url = http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID=c78c90c716c38663bfd4971a4906dd66
-    #api_url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid=c78c90c716c38663bfd4971a4906dd66'
+    #api_url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid=78c90c716c38663bfd4971a4906dd66'
     query =  urllib.parse.quote(query) # url归一化
     url = WEATHER_URL.format(query)
     data = urllib.request.urlopen(url).read()
